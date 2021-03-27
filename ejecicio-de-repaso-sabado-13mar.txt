@@ -1,0 +1,56 @@
+const prompt = require('prompt-sync')();
+var palabraOculta = [];
+var palabraMostada = ["-","-","-","-","-"]
+var contadorAciertos = 0;
+var contadorFallas = 4;
+
+palabrasOculta[0]  =  prompt( "Dame la letra número 1: " );
+palabrasOculta[1]  =  prompt( "Dame la letra número 2: " );
+palabrasOculta[2]  =  prompt( "Dame la letra número 3: " );
+palabrasOculta[3]  =  prompt( "Dame la letra número 4: " );
+//console.log( palabraOculta );
+
+for( var i = 0; i < (palabraOculta.length * 2); i++){
+    var intento =prompt( "Ingresa una letra:" );
+    switch(intenti){
+        case palabraOculta[0]:
+            palabraMostada[0] = palabraOculta[0];
+            console.log (palabraMostada);
+            contadorAciertos++;
+            break;
+        case palabraOculta[1]:
+            palabraMostada[1] = palabraOculta[1];
+            console.log (palabraMostada);
+            contadorAciertos++;
+            break;
+        case palabraOculta[2]:
+            palabraMostada[2] = palabraOculta[2];
+            console.log (palabraMostada);
+            contadorAciertos++;
+            break;
+        case palabraOculta[3]:
+            palabraMostada[3] = palabraOculta[3];
+            console.log (palabraMostada);
+            contadorAciertos++;
+            break;
+        case palabraOculta[1]:
+            palabraMostada[1] = palabraOculta[1];
+            console.log (palabraMostada);
+            contadorAciertos++;
+            break;
+        default:
+            console.log("Te equivocaste :C");
+            console.log("Te quedan") +
+                        contadorFallas +
+                        "intentos");
+            console.log(palabraMostada);
+            contadorFallas--;
+            break;
+    }
+}
+if (contadorFallas == 0 && contadorAciertos < 4) || (contadorFallas < 4){
+    console.log ("PERDISTE, vuelve a intentarlo");
+}
+else if(contadorAciertos == 4){
+    console.log("Ganaste, adivinaste la palabra");
+}
