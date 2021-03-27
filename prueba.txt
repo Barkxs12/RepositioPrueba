@@ -33,6 +33,7 @@ calificaciones[3] = prompt( "Dame la cuarta calif: " );
 calificaciones[4] = prompt( "Dame la quinta calif: " );
 
 //console.log( calificaciones );
+//Comentario
 
 //var resultado = ( calificaciones[0] + calificaciones[1] + calificaciones[2] + calificaciones[3] + calificaciones[4] )/5;
 var calif1 = calificaciones[0];
@@ -49,3 +50,4 @@ console.log( resultados );
 var concatenaN1 = [ "Hola", "Buenas", "Tardes" ];
 var concatenaN2 = [ "Adios", "Buenas", "Noches" ];
 console.log( concatenaN1.concat( concatenaN2 ) );
+//coment
